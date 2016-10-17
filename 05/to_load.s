@@ -11,7 +11,7 @@ _start:
 loop:
 	movq X(%rip), %rax
 	syscall
-	addq $1, X(%rip)
+	incq X(%rip)
 	jmp loop
 
 .data
