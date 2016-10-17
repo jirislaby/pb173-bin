@@ -26,6 +26,6 @@ thread: thread.o
 	$(CC) $(LDFLAGS) -o $@ $< -lpthread
 
 clean:
-	rm -f *.o *.gcno cov prof prof_pg thread
+	rm -f *.o *.gcno cov debug mac prof prof_pg thread
 
 .PHONY: all
